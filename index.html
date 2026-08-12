@@ -16,18 +16,18 @@
   <link id="favicon-32" rel="icon" type="image/png" sizes="32x32" href="assets/images/icon-set/light/A-32.png" />
   <link id="favicon-16" rel="icon" type="image/png" sizes="16x16" href="assets/images/icon-set/light/A-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon-set/light/A-180.png" />
-  <title>Ayush Kumar Sethi — Mobile Technical Architect</title>
-  <meta name="description" content="Mobile Technical Architect with 15+ years building iOS, Android, React Native and Flutter apps used by millions globally." />
+  <title>Ayush Kumar Sethi — Full Stack Technical Architect</title>
+  <meta name="description" content="Full Stack Technical Architect with 15+ years building iOS, Android, React Native, Flutter, React and Node.js products used by millions globally." />
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aks5686.github.io" />
-  <meta property="og:title" content="Ayush Kumar Sethi — Mobile Technical Architect" />
-  <meta property="og:description" content="Mobile Technical Architect with 15+ years building iOS, Android, React Native and Flutter apps used by millions globally." />
+  <meta property="og:title" content="Ayush Kumar Sethi — Full Stack Technical Architect" />
+  <meta property="og:description" content="Full Stack Technical Architect with 15+ years building iOS, Android, React Native, Flutter, React and Node.js products used by millions globally." />
   <meta property="og:image" content="https://aks5686.github.io/assets/images/cover/AKS-OG-Social.png" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ayush Kumar Sethi — Mobile Technical Architect" />
-  <meta name="twitter:description" content="Mobile Technical Architect with 15+ years building iOS, Android, React Native and Flutter apps used by millions globally." />
+  <meta name="twitter:title" content="Ayush Kumar Sethi — Full Stack Technical Architect" />
+  <meta name="twitter:description" content="Full Stack Technical Architect with 15+ years building iOS, Android, React Native, Flutter, React and Node.js products used by millions globally." />
   <meta name="twitter:image" content="https://aks5686.github.io/assets/images/cover/AKS-OG-Social.png" />
   <link rel="canonical" href="https://aks5686.github.io" />
   <link rel="manifest" href="/manifest.json" />
@@ -36,20 +36,19 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Ayush Kumar Sethi",
-    "jobTitle": "Mobile Technical Architect",
+    "jobTitle": "Full Stack Technical Architect",
     "url": "https://aks5686.github.io",
     "sameAs": [
       "https://www.linkedin.com/in/aks5686/",
       "https://github.com/aks5686"
-    ]
+    ],
+    "knowsAbout": ["iOS", "Android", "React Native", "Flutter", "Capacitor", "React", "Next.js", "Node.js", "TypeScript"]
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" /></noscript>
-  <link rel="preload" as="image" href="assets/images/photo-mobile.webp" media="(max-width: 768px)" fetchpriority="high" />
-  <link rel="preload" as="image" href="assets/images/photo.webp" media="(min-width: 769px)" fetchpriority="high" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -71,7 +70,7 @@
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #111110;
-        --bg2: #1a1917;
+        --bg2: #1f1d1a;
         --text: #f0ede8;
         --text2: #8a8780;
         --accent2: #e74c3c;
@@ -87,7 +86,7 @@
 
     html { scroll-behavior: smooth; overflow-x: hidden; }
     body {
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -105,10 +104,11 @@
       display: flex; align-items: center; justify-content: space-between;
     }
     .nav-logo {
-      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.1rem;
+      font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 1.1rem;
       color: var(--text); text-decoration: none; letter-spacing: -0.02em;
     }
     .nav-logo span { color: var(--accent2); }
+    .nav-logo-short { display: none; }
     .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
     .nav-links a {
       font-size: 0.875rem; font-weight: 500; color: var(--text2);
@@ -174,8 +174,7 @@
       pointer-events: none;
     }
     .hero-inner {
-      display: grid; grid-template-columns: 1fr auto;
-      gap: 4rem; align-items: center;
+      display: block;
       width: 100%; max-width: 1100px; margin: 0 auto; position: relative;
     }
     .hero-badge {
@@ -190,7 +189,7 @@
     }
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
     .hero h1 {
-      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif; font-weight: 800;
       font-size: clamp(2.4rem, 5vw, 4rem);
       line-height: 1.1; letter-spacing: -0.03em; color: var(--text); margin-bottom: 1.5rem;
     }
@@ -225,23 +224,13 @@
     }
     .btn-download:hover { border-color: var(--accent2); color: var(--accent2); transform: translateY(-1px); }
     .btn-download img { width: 16px; height: 16px; object-fit: contain; pointer-events: none; }
-    .hero-photo-wrap { position: relative; flex-shrink: 0; user-select: none; }
-    .hero-photo-wrap::after {
-      content: ''; position: absolute; inset: 0; border-radius: 2rem; z-index: 2; cursor: default;
-    }
-    .hero-photo {
-      width: 260px; height: 340px; border-radius: 2rem;
-      object-fit: cover; object-position: center;
-      border: 3px solid var(--border); display: block;
-      pointer-events: none; -webkit-user-drag: none;
-    }
     img { -webkit-user-drag: none; user-select: none; }
     .hero-stats {
       display: flex; gap: 2.5rem; margin-top: 3rem;
       padding-top: 2rem; border-top: 1px solid var(--border); flex-wrap: wrap;
     }
     .stat-number {
-      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.8rem;
+      font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 1.8rem;
       color: var(--text); letter-spacing: -0.03em; line-height: 1;
     }
     .stat-label { font-size: 0.8rem; color: var(--text2); margin-top: 0.25rem; }
@@ -252,7 +241,7 @@
       text-transform: uppercase; color: var(--accent2); margin-bottom: 0.75rem;
     }
     .section-title {
-      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif; font-weight: 800;
       font-size: clamp(1.8rem, 3vw, 2.6rem);
       letter-spacing: -0.03em; color: var(--text); margin-bottom: 1rem; line-height: 1.15;
     }
@@ -275,7 +264,7 @@
     .highlight-card:hover { transform: translateY(-2px); }
     .highlight-icon { width: 1.75rem; height: 1.75rem; object-fit: contain; pointer-events: none; margin-bottom: 0.6rem; display: block; }
     .highlight-card h3 {
-      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif; font-weight: 700;
       font-size: 0.95rem; color: var(--text); margin-bottom: 0.35rem;
     }
     .highlight-card p { font-size: 0.85rem; color: var(--text2); line-height: 1.5; }
@@ -300,7 +289,7 @@
     .skill-icon { font-size: 1.75rem; margin-bottom: 1rem; display: flex; align-items: center; }
     .skill-icon img { width: 2rem; height: 2rem; object-fit: contain; pointer-events: none; }
     .skill-card h3 {
-      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif; font-weight: 700;
       font-size: 1rem; color: var(--text); margin-bottom: 0.5rem;
     }
     .exploring-label {
@@ -339,7 +328,7 @@
       padding: 0.2rem 0.6rem; border-radius: 100px; white-space: nowrap; flex-shrink: 0;
     }
     .project-card h3 {
-      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif; font-weight: 700;
       font-size: 1.1rem; color: var(--text); margin-bottom: 0.75rem;
     }
     .project-card p {
@@ -380,7 +369,7 @@
       font-weight: 500;
     }
     .oss-card h3 {
-      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif; font-weight: 700;
       font-size: 1.05rem; color: var(--text); margin-bottom: 0.6rem;
     }
     .oss-card p {
@@ -422,25 +411,8 @@
       .oss-link:hover { background: var(--accent2); color: #fff; }
     }
 
-    /* EXPERIENCE */
-    .experience-section { background: var(--bg2); padding: 80px 2rem; }
-    .experience-inner { max-width: 1100px; margin: 0 auto; }
-    .experience-list { display: flex; flex-direction: column; }
-    .exp-item {
-      display: grid; grid-template-columns: 160px 1fr;
-      gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--border);
-    }
-    .exp-item:last-child { border-bottom: none; }
-    .exp-period { font-size: 0.8rem; color: var(--text2); padding-top: 0.2rem; }
-    .exp-content h3 {
-      font-family: 'Syne', sans-serif; font-weight: 700;
-      font-size: 1rem; color: var(--text); margin-bottom: 0.2rem;
-    }
-    .exp-company { font-size: 0.85rem; color: var(--accent2); font-weight: 500; margin-bottom: 0.75rem; }
-    .exp-content p { font-size: 0.875rem; color: var(--text2); line-height: 1.7; }
-
     /* CONTACT */
-    .contact-section { padding: 80px 2rem; }
+    .contact-section { background: var(--bg2); padding: 80px 2rem; }
     .contact-inner { max-width: 1100px; margin: 0 auto; }
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
     .contact-form { display: flex; flex-direction: column; gap: 1rem; }
@@ -452,7 +424,7 @@
     .form-group input, .form-group textarea {
       background: var(--card); border: 1.5px solid var(--border);
       border-radius: 0.75rem; padding: 0.75rem 1rem;
-      font-family: 'DM Sans', sans-serif; font-size: 0.95rem;
+      font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-size: 0.95rem;
       color: var(--text); outline: none; transition: border-color 0.2s;
       resize: none; width: 100%;
     }
@@ -461,7 +433,7 @@
     .form-submit {
       background: var(--accent2); color: #fff; border: none;
       padding: 0.8rem 2rem; border-radius: 100px;
-      font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 500;
+      font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-size: 0.95rem; font-weight: 500;
       cursor: pointer; transition: opacity 0.2s, transform 0.2s; align-self: flex-start;
     }
     .form-submit:hover { opacity: 0.85; transform: translateY(-1px); }
@@ -473,7 +445,7 @@
     .form-feedback.success { display: block; background: rgba(34,197,94,0.1); color: #16a34a; border: 1px solid rgba(34,197,94,0.2); }
     .form-feedback.error { display: block; background: rgba(239,68,68,0.1); color: #dc2626; border: 1px solid rgba(239,68,68,0.2); }
     .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
-    .contact-info-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--text); margin-bottom: 0.5rem; }
+    .contact-info-title { font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--text); margin-bottom: 0.5rem; }
     .contact-info p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; font-weight: 300; }
     .contact-links { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem; }
     .contact-link {
@@ -497,7 +469,7 @@
       background: var(--card); color: var(--text2); border: 1px solid var(--border);
       padding: 0.4rem 0.9rem; border-radius: 100px;
       font-size: 0.78rem; font-weight: 500; text-decoration: none; cursor: pointer;
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
       transition: border-color 0.2s, color 0.2s, transform 0.2s;
     }
     .share-btn:hover { border-color: var(--accent2); color: var(--accent2); transform: translateY(-1px); }
@@ -518,7 +490,6 @@
     .hero-sub{animation:fadeUp .5s .2s ease both}
     .hero-actions{animation:fadeUp .5s .3s ease both}
     .hero-stats{animation:fadeUp .5s .4s ease both}
-    .hero-photo-wrap{}
 
     /* SCROLL PROGRESS */
     #scrollProgress {
@@ -574,30 +545,28 @@
     @media (prefers-reduced-motion: reduce) {
       .fade-up { opacity: 1; transform: none; transition: none; }
       .fade-up-delay-1, .fade-up-delay-2, .fade-up-delay-3, .fade-up-delay-4 { transition-delay: 0s; }
-      .hero-badge, .hero h1, .hero-sub, .hero-actions, .hero-stats, .hero-photo-wrap { animation: none; }
+      .hero-badge, .hero h1, .hero-sub, .hero-actions, .hero-stats { animation: none; }
     }
 
     /* RESPONSIVE */
     @media (max-width: 900px) {
       .nav-links { display: none !important; }
       .hamburger { display: flex; }
+      .nav-logo-full { display: none; }
+      .nav-logo-short { display: inline; }
       .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .opensource-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 768px) {
-      .hero { padding: 100px 1.5rem 60px; }
-      .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 2.5rem; }
-      .hero-photo { width: 160px; height: 200px; }
-      .hero-photo-wrap { order: -1; margin: 0 auto; }
+      .hero { padding: 100px 1.5rem 60px; text-align: center; }
       .hero-badge { margin: 0 auto 1.5rem; }
       .hero-actions { justify-content: center; }
       .hero-stats { justify-content: center; gap: 1.5rem; }
-      .about-section,.skills-section,.projects-section,.experience-section,.contact-section,.opensource-section { padding: 60px 1.5rem; }
+      .about-section,.skills-section,.projects-section,.contact-section,.opensource-section { padding: 60px 1.5rem; }
       .about-grid { grid-template-columns: 1fr; gap: 2rem; }
       .skills-grid { grid-template-columns: 1fr; }
       .projects-grid { grid-template-columns: 1fr; }
       .opensource-grid { grid-template-columns: 1fr; }
-      .exp-item { grid-template-columns: 1fr; gap: 0.4rem; }
     }
     @media (max-width: 480px) {
       .hero h1 { font-size: 2rem; }
@@ -612,13 +581,13 @@
     "@type": "Person",
     "name": "Ayush Kumar Sethi",
     "alternateName": "AKS",
-    "jobTitle": "Mobile Technical Architect",
+    "jobTitle": "Full Stack Technical Architect",
     "url": "https://aks5686.github.io",
     "sameAs": [
       "https://linkedin.com/in/aks5686",
       "https://github.com/aks5686"
     ],
-    "knowsAbout": ["iOS", "Android", "Flutter", "React Native", "Capacitor"],
+    "knowsAbout": ["iOS", "Android", "React Native", "Flutter", "Capacitor", "React", "Next.js", "Node.js", "TypeScript"],
     "worksFor": {
       "@type": "Organization",
       "name": "Available for opportunities"
@@ -637,13 +606,15 @@
   <div id="scrollProgress"></div>
 
   <nav>
-    <a class="nav-logo" href="#"><span>AKS</span> — Portfolio</a>
+    <a class="nav-logo" href="#">
+      <span class="nav-logo-full">Ayush Kumar Sethi</span>
+      <span class="nav-logo-short">AYUSH</span>
+    </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#opensource">Open Source</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
       <li><a href="https://github.com/aks5686" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub profile"><svg aria-hidden="true"><use href="#icon-github"></use></svg></a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
@@ -657,7 +628,6 @@
     <a href="#projects" onclick="closeMenu()">Projects</a>
     <a href="#opensource" onclick="closeMenu()">Open Source</a>
     <a href="#skills" onclick="closeMenu()">Skills</a>
-    <a href="#experience" onclick="closeMenu()">Experience</a>
     <a href="https://github.com/aks5686" target="_blank" rel="noopener" class="nav-github-mobile" onclick="closeMenu()"><svg aria-hidden="true"><use href="#icon-github"></use></svg> GitHub</a>
     <a href="#contact" class="nav-cta" onclick="closeMenu()">Contact</a>
   </div>
@@ -667,13 +637,14 @@
   <section class="hero">
     <div class="hero-inner">
       <div>
-        <div class="hero-badge">Available for global opportunities</div>
-        <h1>Architecting mobile<br/>experiences used by <em>millions.</em></h1>
-        <p class="hero-sub">Mobile Technical Architect with 15+ years building iOS, Android, React Native and Flutter apps — from concept to App Store, at scale.</p>
+        <div class="hero-badge">Available for freelance &amp; consulting</div>
+        <h1>Architecting digital<br/>experiences used by <em>millions.</em></h1>
+        <p class="hero-sub">Full Stack Technical Architect with 15+ years building iOS, Android, React Native, Flutter, React and Node.js products — from concept to production, at scale.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn-primary">Get in touch →</a>
           <a href="#projects" class="btn-secondary">View work</a>
-          <a href="assets/files/CV-AKS.pdf" download class="btn-download">↓ Download CV</a>
+          <a href="https://www.linkedin.com/in/aks5686/" target="_blank" rel="noopener noreferrer" class="btn-secondary"><img src="assets/images/themeicons/linkedin.svg" alt="" class="contact-link-icon" draggable="false" /> LinkedIn ↗</a>
+          <a href="https://github.com/aks5686" target="_blank" rel="noopener noreferrer" class="btn-secondary"><svg class="contact-link-icon" aria-hidden="true"><use href="#icon-github"></use></svg> GitHub ↗</a>
         </div>
         <div class="hero-stats">
           <div><div class="stat-number">15+</div><div class="stat-label">Years experience</div></div>
@@ -681,14 +652,6 @@
           <div><div class="stat-number">30+</div><div class="stat-label">Apps shipped</div></div>
           <div><div class="stat-number">5</div><div class="stat-label">Platforms</div></div>
         </div>
-      </div>
-      <div class="hero-photo-wrap">
-        <picture>
-          <source media="(max-width: 768px)" srcset="assets/images/photo-mobile.webp" type="image/webp" />
-          <source media="(max-width: 768px)" srcset="assets/images/photo-mobile.jpg" />
-          <source srcset="assets/images/photo.webp" type="image/webp" />
-          <img src="assets/images/photo.jpg" alt="Ayush Kumar Sethi, Mobile Technical Architect" class="hero-photo" draggable="false" loading="eager" fetchpriority="high" width="260" height="340" />
-        </picture>
       </div>
     </div>
   </section>
@@ -698,33 +661,33 @@
       <div class="section-label fade-up">About</div>
       <div class="about-grid">
         <div>
-          <h2 class="section-title fade-up fade-up-delay-1">15 years of mobile.<br/>Built to last.</h2>
+          <h2 class="section-title fade-up fade-up-delay-1">15 years across the digital stack.<br/>Built to last.</h2>
           <div class="about-text fade-up fade-up-delay-2">
-            <p>I'm <strong>Ayush Kumar Sethi</strong> — a Mobile Technical Architect open to global opportunities, with a strong preference for remote-first and relocation-friendly roles worldwide.</p>
-            <p>My career spans the full mobile stack — from native iOS and Android to cross-platform React Native, Flutter and Capacitor. I've architected products used by <strong>120 million people</strong>, led engineering teams, driven pre-sales engagements, and delivered across fintech, health tech, enterprise and consumer domains.</p>
+            <p>I'm <strong>Ayush Kumar Sethi</strong> — a <strong>Full Stack Technical Architect</strong> available for freelance and consulting engagements globally. I partner with founders, product teams and agencies to architect, build and ship digital products across iOS, Android, React Native, Flutter, Capacitor, React and Node.js — from greenfield architecture and MVPs to scaling existing products, technical due diligence, and AI-native integration. Remote-first, timezone-flexible, and set up to plug into your team from day one.</p>
+            <p>My career spans the full digital stack — from native iOS and Android to cross-platform React Native, Flutter and Capacitor, through to modern web with React, Next.js and Node.js. I've architected products used by <strong>120 million people</strong>, led engineering teams, driven pre-sales engagements, and delivered across fintech, health tech, enterprise and consumer domains.</p>
             <p>I actively leverage AI tools — Claude Code, ChatGPT, Codex, Cursor — as genuine productivity multipliers throughout the development lifecycle.</p>
           </div>
         </div>
         <div class="about-highlights">
           <div class="highlight-card fade-up fade-up-delay-1">
+            <img src="assets/images/themeicons/aboutai.svg" alt="" class="highlight-icon" loading="lazy" draggable="false" />
+            <h3>AI-native development</h3>
+            <p>Integrated AI-assisted workflows across teams, improving code review efficiency and accelerating delivery cycles.</p>
+          </div>
+          <div class="highlight-card fade-up fade-up-delay-2">
             <img src="assets/images/themeicons/vpn.svg" alt="" class="highlight-icon" loading="lazy" draggable="false" />
             <h3>High-security VPN at global scale</h3>
             <p>Lead architect on Outline — open-source VPN deployed across iOS, Android and macOS for millions of users worldwide.</p>
           </div>
-          <div class="highlight-card fade-up fade-up-delay-2">
+          <div class="highlight-card fade-up fade-up-delay-3">
+            <img src="assets/images/themeicons/car-connect.svg" alt="" class="highlight-icon" loading="lazy" draggable="false" />
+            <h3>Connected Car</h3>
+            <p>Architected BlueSensePlus — exclusive EV companion app for the Mahindra XUV400 with Apple Watch integration.</p>
+          </div>
+          <div class="highlight-card fade-up fade-up-delay-4">
             <img src="assets/images/themeicons/users.svg" alt="" class="highlight-icon" loading="lazy" draggable="false" />
             <h3>120M+ user e-greetings platform</h3>
             <p>Owned iOS architecture and delivery of 123Greetings — one of the world's largest e-greetings apps.</p>
-          </div>
-          <div class="highlight-card fade-up fade-up-delay-3">
-            <img src="assets/images/themeicons/car-connect.svg" alt="" class="highlight-icon" loading="lazy" draggable="false" />
-            <h3>Connected car for Mahindra XUV400</h3>
-            <p>Architected BlueSensePlus — exclusive EV companion app with Apple Watch integration.</p>
-          </div>
-          <div class="highlight-card fade-up fade-up-delay-4">
-            <img src="assets/images/themeicons/aboutai.svg" alt="" class="highlight-icon" loading="lazy" draggable="false" />
-            <h3>AI-native development</h3>
-            <p>Integrated AI-assisted workflows across teams, improving code review efficiency and accelerating delivery cycles.</p>
           </div>
         </div>
       </div>
@@ -755,7 +718,7 @@
             <span class="project-scale">EdTech</span>
           </div>
           <h3>NetSkill</h3>
-          <p>Enterprise learning and development platform offering gamified, microlearning-based training. Built cross-platform mobile apps delivering personalised learning journeys at scale.</p>
+          <p>Enterprise learning and development platform offering gamified, microlearning-based training. Built cross-platform digital apps delivering personalised learning journeys at scale.</p>
           <div class="project-links">
             <a href="https://www.netskill.com/" target="_blank" class="project-link">Website</a>
             <a href="https://apps.apple.com/au/app/netskill-learner-app/id6503343647" target="_blank" class="project-link">App Store</a>
@@ -763,30 +726,6 @@
           </div>
         </div>
         <div class="project-card fade-up fade-up-delay-2">
-          <div class="project-meta">
-            <img src="assets/images/projectIcons/sanmarg.webp" alt="Sanmarg" class="project-app-icon" loading="lazy" draggable="false" />
-            <span class="project-scale">News & Media</span>
-          </div>
-          <h3>Sanmarg Daily</h3>
-          <p>Digital transformation of one of India's leading newspapers. Architected mobile platform for daily news delivery, e-paper, push notifications and offline reading across iOS and Android.</p>
-          <div class="project-links">
-            <a href="https://sanmarg.in/" target="_blank" class="project-link">Website</a>
-            <a href="https://apps.apple.com/in/app/sanmarg-hindi-daily/id6478143397" target="_blank" class="project-link">App Store</a>
-            <a href="https://play.google.com/store/apps/details?id=com.sanmarg.android.v1" target="_blank" class="project-link">Play Store</a>
-          </div>
-        </div>
-        <div class="project-card fade-up fade-up-delay-3">
-          <div class="project-meta">
-            <img src="assets/images/projectIcons/123g.webp" alt="123Greetings" class="project-app-icon" loading="lazy" draggable="false" />
-            <span class="project-scale">120M+ lifetime users</span>
-          </div>
-          <h3>123Greetings</h3>
-          <p>iOS lead on one of the world's largest e-greetings platforms. Owned architecture, feature delivery and App Store management. Integrated native advertising driving 30% uplift in ad revenue.</p>
-          <div class="project-links">
-            <a href="https://apps.apple.com/in/app/greeting-cards-wishes/id718873921" target="_blank" class="project-link">App Store</a>
-          </div>
-        </div>
-        <div class="project-card fade-up">
           <div class="project-meta">
             <img src="assets/images/projectIcons/bluesense.webp" alt="BlueSensePlus" class="project-app-icon" loading="lazy" draggable="false" />
             <span class="project-scale">Mahindra XUV400</span>
@@ -797,7 +736,7 @@
             <a href="https://apps.apple.com/in/app/bluesenseplus-app-xuv400/id6443952494" target="_blank" class="project-link">App Store</a>
           </div>
         </div>
-        <div class="project-card fade-up fade-up-delay-1">
+        <div class="project-card fade-up fade-up-delay-3">
           <div class="project-meta">
             <img src="assets/images/projectIcons/camrematics.webp" alt="CameraMatics" class="project-app-icon" loading="lazy" draggable="false" />
             <span class="project-scale">Logistics</span>
@@ -809,6 +748,30 @@
             <a href="https://apps.apple.com/in/app/cameramatics-driver/id1440009778" target="_blank" class="project-link">Driver App</a>
           </div>
         </div>
+        <div class="project-card fade-up">
+          <div class="project-meta">
+            <img src="assets/images/projectIcons/sanmarg.webp" alt="Sanmarg" class="project-app-icon" loading="lazy" draggable="false" />
+            <span class="project-scale">News & Media</span>
+          </div>
+          <h3>Sanmarg Daily</h3>
+          <p>Digital transformation of one of India's leading newspapers. Architected the digital platform for daily news delivery, e-paper, push notifications and offline reading across iOS and Android.</p>
+          <div class="project-links">
+            <a href="https://sanmarg.in/" target="_blank" class="project-link">Website</a>
+            <a href="https://apps.apple.com/in/app/sanmarg-hindi-daily/id6478143397" target="_blank" class="project-link">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sanmarg.android.v1" target="_blank" class="project-link">Play Store</a>
+          </div>
+        </div>
+        <div class="project-card fade-up fade-up-delay-1">
+          <div class="project-meta">
+            <img src="assets/images/projectIcons/123g.webp" alt="123Greetings" class="project-app-icon" loading="lazy" draggable="false" />
+            <span class="project-scale">120M+ lifetime users</span>
+          </div>
+          <h3>123Greetings</h3>
+          <p>iOS lead on one of the world's largest e-greetings platforms. Owned architecture, feature delivery and App Store management. Integrated native advertising driving 30% uplift in ad revenue.</p>
+          <div class="project-links">
+            <a href="https://apps.apple.com/in/app/greeting-cards-wishes/id718873921" target="_blank" class="project-link">App Store</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -816,8 +779,8 @@
   <section class="opensource-section" id="opensource">
     <div class="opensource-inner">
       <div class="section-label fade-up">Open Source</div>
-      <h2 class="section-title fade-up fade-up-delay-1">Production-ready boilerplates. Free for everyone.</h2>
-      <p class="section-sub fade-up fade-up-delay-2">Open-source architecture templates built for real-world mobile development — clean, opinionated, and CI/CD-ready from day one.</p>
+      <h2 class="section-title fade-up fade-up-delay-1">Building the digital ecosystem. In the open.</h2>
+      <p class="section-sub fade-up fade-up-delay-2">The Syzygy ecosystem is a full open-source foundation for modern cross-platform development — production-grade libraries, architecture templates, brand-consistent UI kits and CI/CD standards, freely available to every engineer, team and startup shipping on iOS, Android, React Native and Flutter. Built to be picked up, shipped with, and scaled — no strings, no lock-in, MIT licensed.</p>
       <div class="opensource-grid">
         <div class="oss-card fade-up">
           <div class="oss-meta">
@@ -889,9 +852,42 @@
   <section class="skills-section" id="skills">
     <div class="skills-inner">
       <div class="section-label fade-up">Skills</div>
-      <h2 class="section-title fade-up fade-up-delay-1">Full-stack mobile expertise.</h2>
+      <h2 class="section-title fade-up fade-up-delay-1">Full-stack digital expertise.</h2>
       <p class="section-sub fade-up fade-up-delay-2">Deep across native and cross-platform, with architectural thinking at every layer.</p>
       <div class="skills-grid">
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><img src="assets/images/themeicons/cross-platform.svg" alt="Cross-Platform & Web — React Native, Flutter, React, Next.js, Node.js" loading="lazy" draggable="false" /></div>
+          <h3>Cross-Platform & Web</h3>
+          <div class="skill-tags">
+            <span class="tag">React Native</span><span class="tag">Flutter</span>
+            <span class="tag">Capacitor</span><span class="tag">React</span><span class="tag">Next.js</span>
+            <span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Dart</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-1">
+          <div class="skill-icon"><img src="assets/images/themeicons/architecture.svg" alt="Architecture and Design Patterns" loading="lazy" draggable="false" /></div>
+          <h3>Architecture & Design</h3>
+          <div class="skill-tags">
+            <span class="tag">MVVM</span><span class="tag">VIPER</span><span class="tag">Clean Architecture</span>
+            <span class="tag">SOLID</span><span class="tag">Microservices</span><span class="tag">GraphQL</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-2">
+          <div class="skill-icon"><img src="assets/images/themeicons/ci-cd.svg" alt="DevOps and CI/CD — GitHub Actions, Fastlane" loading="lazy" draggable="false" /></div>
+          <h3>DevOps & CI/CD</h3>
+          <div class="skill-tags">
+            <span class="tag">GitHub Actions</span><span class="tag">Fastlane</span>
+            <span class="tag">Xcode Cloud</span><span class="tag">Firebase</span><span class="tag">GitLab CI</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-3">
+          <div class="skill-icon"><img src="assets/images/themeicons/ai.svg" alt="AI-Assisted Development — Claude Code, Cursor, Copilot" loading="lazy" draggable="false" /></div>
+          <h3>AI-Assisted Development</h3>
+          <div class="skill-tags">
+            <span class="tag">Claude Code</span><span class="tag">ChatGPT</span>
+            <span class="tag">Codex</span><span class="tag">Cursor</span><span class="tag">GitHub Copilot</span>
+          </div>
+        </div>
         <div class="skill-card fade-up">
           <div class="skill-icon"><img src="assets/images/themeicons/ios.svg" alt="iOS Development" loading="lazy" draggable="false" /></div>
           <h3>iOS Development</h3>
@@ -909,38 +905,6 @@
           </div>
         </div>
         <div class="skill-card fade-up fade-up-delay-2">
-          <div class="skill-icon"><img src="assets/images/themeicons/cross-platform.svg" alt="Cross-Platform Development — React Native, Flutter" loading="lazy" draggable="false" /></div>
-          <h3>Cross-Platform</h3>
-          <div class="skill-tags">
-            <span class="tag">React Native</span><span class="tag">Flutter</span>
-            <span class="tag">Capacitor</span><span class="tag">Dart</span><span class="tag">TypeScript</span>
-          </div>
-        </div>
-        <div class="skill-card fade-up fade-up-delay-3">
-          <div class="skill-icon"><img src="assets/images/themeicons/architecture.svg" alt="Mobile Architecture and Design Patterns" loading="lazy" draggable="false" /></div>
-          <h3>Architecture & Design</h3>
-          <div class="skill-tags">
-            <span class="tag">MVVM</span><span class="tag">VIPER</span><span class="tag">Clean Architecture</span>
-            <span class="tag">SOLID</span><span class="tag">Microservices</span><span class="tag">GraphQL</span>
-          </div>
-        </div>
-        <div class="skill-card fade-up">
-          <div class="skill-icon"><img src="assets/images/themeicons/ci-cd.svg" alt="DevOps and CI/CD — GitHub Actions, Fastlane" loading="lazy" draggable="false" /></div>
-          <h3>DevOps & CI/CD</h3>
-          <div class="skill-tags">
-            <span class="tag">GitHub Actions</span><span class="tag">Fastlane</span>
-            <span class="tag">Xcode Cloud</span><span class="tag">Firebase</span><span class="tag">GitLab CI</span>
-          </div>
-        </div>
-        <div class="skill-card fade-up fade-up-delay-1">
-          <div class="skill-icon"><img src="assets/images/themeicons/ai.svg" alt="AI-Assisted Development — Claude Code, Cursor, Copilot" loading="lazy" draggable="false" /></div>
-          <h3>AI-Assisted Development</h3>
-          <div class="skill-tags">
-            <span class="tag">Claude Code</span><span class="tag">ChatGPT</span>
-            <span class="tag">Codex</span><span class="tag">Cursor</span><span class="tag">GitHub Copilot</span>
-          </div>
-        </div>
-        <div class="skill-card fade-up fade-up-delay-2">
           <div class="skill-icon"><img src="assets/images/themeicons/leader.svg" alt="Engineering Leadership and Team Delivery" loading="lazy" draggable="false" /></div>
           <h3>Leadership & Delivery</h3>
           <div class="skill-tags">
@@ -950,79 +914,13 @@
           </div>
         </div>
         <div class="skill-card exploring fade-up fade-up-delay-3">
-          <div class="skill-icon"><img src="assets/images/themeicons/explore.svg" alt="Currently Exploring — LLM Integration, RAG, Agentic AI" loading="lazy" draggable="false" /></div>
-          <h3>Currently Exploring</h3>
-          <div class="exploring-label">Active learning</div>
+          <div class="skill-icon"><img src="assets/images/themeicons/explore.svg" alt="Currently Building — LLM Integration, RAG, Agentic AI" loading="lazy" draggable="false" /></div>
+          <h3>Currently Building</h3>
+          <div class="exploring-label">In active development</div>
           <div class="skill-tags">
             <span class="tag">LLM Integration</span><span class="tag">RAG Systems</span>
             <span class="tag">Agentic Workflows</span><span class="tag">Vector Databases</span>
             <span class="tag">AI Product Design</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="experience-section" id="experience">
-    <div class="experience-inner">
-      <div class="section-label fade-up">Experience</div>
-      <h2 class="section-title fade-up fade-up-delay-1">Where I've built.</h2>
-      <p class="section-sub fade-up fade-up-delay-2">15 years across product companies, service firms and global clients.</p>
-      <div class="experience-list">
-        <div class="exp-item fade-up">
-          <div class="exp-period">Mar 2025 – Apr 2026</div>
-          <div class="exp-content">
-            <h3>Lead Mobile Developer</h3>
-            <div class="exp-company">Teon LLC</div>
-            <p>Architected and delivered Outline — a global high-security VPN across iOS, Android and macOS. Reduced build times by 20%, accelerated release cycles from monthly to 3-weekly. Leveraged Claude Code and ChatGPT throughout the lifecycle.</p>
-          </div>
-        </div>
-        <div class="exp-item fade-up">
-          <div class="exp-period">Oct 2021 – Aug 2024</div>
-          <div class="exp-content">
-            <h3>Technical Lead</h3>
-            <div class="exp-company">GoodWorkLabs Services Pvt. Ltd.</div>
-            <p>Led architecture and delivery of 8+ simultaneous client mobile projects across iOS, Android and Flutter. Drove 5+ pre-sales engagements. Introduced AI-assisted development, improving code review efficiency by 25%.</p>
-          </div>
-        </div>
-        <div class="exp-item fade-up">
-          <div class="exp-period">Oct 2017 – Sep 2021</div>
-          <div class="exp-content">
-            <h3>Senior Software Engineer</h3>
-            <div class="exp-company">IndusNet Technologies Pvt. Ltd.</div>
-            <p>Designed and delivered 20+ mobile applications across fintech, health tech and enterprise domains. Coached 10+ developers, establishing Git workflows that reduced PR review time by 40%.</p>
-          </div>
-        </div>
-        <div class="exp-item fade-up">
-          <div class="exp-period">Jan 2017 – Sep 2017</div>
-          <div class="exp-content">
-            <h3>Senior iOS Developer</h3>
-            <div class="exp-company">MET Technologies Pvt. Ltd.</div>
-            <p>Developed mobile applications owning the full lifecycle from requirements through to App Store deployment. Maintained clean codebases using Git best practices, ensuring code quality and maintainability.</p>
-          </div>
-        </div>
-        <div class="exp-item fade-up">
-          <div class="exp-period">Jan 2015 – May 2016</div>
-          <div class="exp-content">
-            <h3>Specialist — Technology</h3>
-            <div class="exp-company">Intrasoft Technologies Ltd.</div>
-            <p>Led the development of 123Greetings — 120M+ lifetime users. Integrated native advertising driving a 30% uplift in app ad revenue within 3 months.</p>
-          </div>
-        </div>
-        <div class="exp-item fade-up">
-          <div class="exp-period">Mar 2013 – Dec 2014</div>
-          <div class="exp-content">
-            <h3>iOS Developer</h3>
-            <div class="exp-company">Brishti Technologies Pvt. Ltd.</div>
-            <p>Developed native iOS applications using Xcode and Objective-C across multiple client domains.</p>
-          </div>
-        </div>
-        <div class="exp-item fade-up">
-          <div class="exp-period">Nov 2010 – Feb 2013</div>
-          <div class="exp-content">
-            <h3>Flash AS3 Programmer</h3>
-            <div class="exp-company">Radikal Labs Pvt. Ltd.</div>
-            <p>Created Flash apps using ActionScript 3.0, building foundational skills in cross-platform interactive development.</p>
           </div>
         </div>
       </div>
@@ -1036,8 +934,8 @@
       <div class="contact-grid">
         <div class="contact-info fade-up fade-up-delay-2">
           <div>
-            <div class="contact-info-title">Open to global opportunities</div>
-            <p>Available for senior mobile engineering and technical leadership roles worldwide. Remote-first, open to relocation.</p>
+            <div class="contact-info-title">Available for freelance &amp; consulting</div>
+            <p>Available for freelance and consulting engagements — architecture, greenfield builds, MVPs, scaling existing apps, technical due diligence and AI-native integration. Remote-first, timezone-flexible, engagement models from short sprints to long-term technical partnerships.</p>
           </div>
           <div class="contact-links">
             <a href="mailto:aks5686@gmail.com" class="contact-link"><img src="assets/images/themeicons/email.svg" alt="" class="contact-link-icon" draggable="false" /> aks5686@gmail.com</a>
@@ -1072,10 +970,10 @@
 
   <footer>
     <div class="footer-share">
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://aks5686.github.io" target="_blank" rel="noopener" class="share-btn">
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://aks5686.pages.dev" target="_blank" rel="noopener" class="share-btn">
         <img src="assets/images/themeicons/linkedin.svg" alt="" draggable="false" /> Share on LinkedIn
       </a>
-      <a href="https://wa.me/?text=Check%20out%20Ayush%27s%20portfolio%3A%20https%3A%2F%2Faks5686.github.io" target="_blank" rel="noopener" class="share-btn">
+      <a href="https://wa.me/?text=Check%20out%20Ayush%27s%20portfolio%3A%20https%3A%2F%2Faks5686.pages.dev" target="_blank" rel="noopener" class="share-btn">
         <img src="assets/images/themeicons/whatsapp.svg" alt="" draggable="false" /> Share on WhatsApp
       </a>
       <button class="share-btn" id="copyLinkBtn" onclick="copyLink()">
@@ -1107,7 +1005,7 @@
 
     // COPY LINK
     function copyLink() {
-      navigator.clipboard.writeText('https://aks5686.github.io').then(() => {
+      navigator.clipboard.writeText(window.location.href).then(() => {
         const btn = document.getElementById('copyLinkBtn');
         btn.classList.add('share-copied');
         btn.querySelector('img').src = 'assets/images/themeicons/copy-link.svg';

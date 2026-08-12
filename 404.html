@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Page Not Found — Ayush Kumar Sethi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #fafaf7; --text: #111110; --text2: #5d5a54;
+      --accent2: #e74c3c; --border: rgba(17,17,16,0.1);
+      --card: #ffffff; --nav-bg: rgba(250,250,247,0.88);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111110; --text: #f0ede8; --text2: #8a8780;
+        --accent2: #e74c3c; --border: rgba(240,237,232,0.08);
+        --card: #1a1917; --nav-bg: rgba(17,17,16,0.88);
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg); color: var(--text);
+      min-height: 100vh; display: flex; flex-direction: column;
+    }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--nav-bg);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem; height: 60px;
+      display: flex; align-items: center;
+    }
+    .nav-logo {
+      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.1rem;
+      color: var(--text); text-decoration: none; letter-spacing: -0.02em;
+    }
+    .nav-logo span { color: var(--accent2); }
+
+    main {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      padding: 4rem 2rem; text-align: center;
+    }
+    .error-inner { max-width: 480px; }
+    .error-code {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: clamp(5rem, 20vw, 9rem);
+      color: var(--accent2); line-height: 1;
+      letter-spacing: -0.05em; margin-bottom: 1.5rem;
+    }
+    .error-title {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      letter-spacing: -0.03em; color: var(--text); margin-bottom: 1rem;
+    }
+    .error-msg {
+      font-size: 1rem; color: var(--text2); line-height: 1.7;
+      font-weight: 300; margin-bottom: 2.5rem;
+    }
+    .btn-home {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--accent2); color: #fff;
+      padding: 0.75rem 1.75rem; border-radius: 100px;
+      font-size: 0.95rem; font-weight: 500; text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .btn-home:hover { opacity: 0.85; transform: translateY(-1px); }
+
+    footer {
+      text-align: center; padding: 1.5rem 2rem;
+      font-size: 0.8rem; color: var(--text2);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/"><span>AKS</span> — Portfolio</a>
+  </nav>
+
+  <main>
+    <div class="error-inner">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Page not found</h1>
+      <p class="error-msg">The page you're looking for doesn't exist or may have been moved.<br/>Let's get you back on track.</p>
+      <a href="/" class="btn-home">← Back to home</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Ayush Kumar Sethi · Built with Care</p>
+  </footer>
+
+</body>
+</html>

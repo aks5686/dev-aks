@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4SKCVK2SE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q4SKCVK2SE');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)" />
+  <link id="favicon-32" rel="icon" type="image/png" sizes="32x32" href="assets/images/icon-set/light/A-32.png" />
+  <link id="favicon-16" rel="icon" type="image/png" sizes="16x16" href="assets/images/icon-set/light/A-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon-set/light/A-180.png" />
+  <title>Ayush Kumar Sethi — Mobile Technical Architect</title>
+  <meta name="description" content="Mobile Technical Architect with 15+ years building iOS, Android, React Native and Flutter apps used by millions globally." />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aks5686.github.io" />
+  <meta property="og:title" content="Ayush Kumar Sethi — Mobile Technical Architect" />
+  <meta property="og:description" content="Mobile Technical Architect with 15+ years building iOS, Android, React Native and Flutter apps used by millions globally." />
+  <meta property="og:image" content="https://aks5686.github.io/assets/images/cover/AKS-OG-Social.png" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ayush Kumar Sethi — Mobile Technical Architect" />
+  <meta name="twitter:description" content="Mobile Technical Architect with 15+ years building iOS, Android, React Native and Flutter apps used by millions globally." />
+  <meta name="twitter:image" content="https://aks5686.github.io/assets/images/cover/AKS-OG-Social.png" />
+  <link rel="canonical" href="https://aks5686.github.io" />
+  <link rel="manifest" href="/manifest.json" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ayush Kumar Sethi",
+    "jobTitle": "Mobile Technical Architect",
+    "url": "https://aks5686.github.io",
+    "sameAs": [
+      "https://www.linkedin.com/in/aks5686/",
+      "https://github.com/aks5686"
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" /></noscript>
+  <link rel="preload" as="image" href="assets/images/photo-mobile.webp" media="(max-width: 768px)" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/images/photo.webp" media="(min-width: 769px)" fetchpriority="high" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #fafaf7;
+      --bg2: #f0ede6;
+      --text: #111110;
+      --text2: #5d5a54;
+      --accent2: #e74c3c;
+      --border: rgba(17,17,16,0.1);
+      --card: #ffffff;
+      --tag-bg: #eceae4;
+      --tag-text: #3a3830;
+      --nav-bg: rgba(250,250,247,0.88);
+      --hero-grad: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(232,99,42,0.07) 0%, transparent 70%),
+                   radial-gradient(ellipse 60% 80% at 20% 60%, rgba(17,17,16,0.04) 0%, transparent 70%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111110;
+        --bg2: #1a1917;
+        --text: #f0ede8;
+        --text2: #8a8780;
+        --accent2: #e74c3c;
+        --border: rgba(240,237,232,0.08);
+        --card: #1a1917;
+        --tag-bg: #2a2925;
+        --tag-text: #b0ada8;
+        --nav-bg: rgba(17,17,16,0.88);
+        --hero-grad: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(232,99,42,0.12) 0%, transparent 70%),
+                     radial-gradient(ellipse 60% 80% at 20% 60%, rgba(240,237,232,0.03) 0%, transparent 70%);
+      }
+    }
+
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: var(--nav-bg);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem; height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.1rem;
+      color: var(--text); text-decoration: none; letter-spacing: -0.02em;
+    }
+    .nav-logo span { color: var(--accent2); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+    .nav-links a {
+      font-size: 0.875rem; font-weight: 500; color: var(--text2);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent2); }
+    .nav-cta {
+      background: #c0392b !important; color: #fff !important;
+      padding: 0.45rem 1.1rem !important; border-radius: 100px; transition: opacity 0.2s !important;
+    }
+    .nav-cta:hover { opacity: 0.85 !important; }
+    .nav-github {
+      display: inline-flex; align-items: center; justify-content: center;
+      color: var(--text2); transition: color 0.2s;
+    }
+    .nav-github svg { width: 1.15rem; height: 1.15rem; fill: currentColor; display: block; }
+    .nav-github:hover { color: var(--accent2); }
+    .nav-github-mobile {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 1rem; font-weight: 500; color: var(--text2);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .nav-github-mobile svg { width: 1.1rem; height: 1.1rem; fill: currentColor; flex-shrink: 0; }
+    .nav-github-mobile:hover { color: var(--accent2); }
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 6px; z-index: 200;
+    }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--text); border-radius: 2px; transition: all 0.3s; transform-origin: center;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-menu {
+      display: none; position: fixed; top: 60px; left: 0; right: 0;
+      background: var(--nav-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem; flex-direction: column; gap: 1.25rem; z-index: 99;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: 1rem; font-weight: 500; color: var(--text2);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: var(--accent2); }
+    .mobile-menu .nav-cta {
+      display: inline-block; background: var(--accent2) !important;
+      color: #fff !important; padding: 0.6rem 1.25rem !important;
+      border-radius: 100px; text-align: center; width: fit-content;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh; padding: 120px 2rem 80px;
+      display: flex; align-items: center;
+      background: var(--hero-grad); position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 50% 40% at 50% 100%, var(--bg2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 4rem; align-items: center;
+      width: 100%; max-width: 1100px; margin: 0 auto; position: relative;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--tag-bg); color: var(--tag-text);
+      font-size: 0.8rem; font-weight: 500;
+      padding: 0.35rem 0.9rem; border-radius: 100px; margin-bottom: 1.5rem;
+    }
+    .hero-badge::before {
+      content: ''; width: 7px; height: 7px; background: #22c55e;
+      border-radius: 50%; flex-shrink: 0; animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    .hero h1 {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.1; letter-spacing: -0.03em; color: var(--text); margin-bottom: 1.5rem;
+    }
+    .hero h1 em { font-style: normal; color: var(--accent2); }
+    .hero-sub {
+      font-size: 1.1rem; color: var(--text2); max-width: 520px;
+      margin-bottom: 2.5rem; font-weight: 300; line-height: 1.7;
+    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--accent2); color: #fff;
+      padding: 0.75rem 1.75rem; border-radius: 100px;
+      font-size: 0.95rem; font-weight: 500; text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: transparent; color: var(--text);
+      padding: 0.75rem 1.75rem; border-radius: 100px;
+      font-size: 0.95rem; font-weight: 500; text-decoration: none;
+      border: 1.5px solid var(--border); transition: border-color 0.2s, transform 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--accent2); transform: translateY(-1px); }
+    .btn-download {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: transparent; color: var(--text2);
+      padding: 0.75rem 1.5rem; border-radius: 100px;
+      font-size: 0.95rem; font-weight: 500; text-decoration: none;
+      border: 1.5px solid var(--border); transition: border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+    .btn-download:hover { border-color: var(--accent2); color: var(--accent2); transform: translateY(-1px); }
+    .btn-download img { width: 16px; height: 16px; object-fit: contain; pointer-events: none; }
+    .hero-photo-wrap { position: relative; flex-shrink: 0; user-select: none; }
+    .hero-photo-wrap::after {
+      content: ''; position: absolute; inset: 0; border-radius: 2rem; z-index: 2; cursor: default;
+    }
+    .hero-photo {
+      width: 260px; height: 340px; border-radius: 2rem;
+      object-fit: cover; object-position: center;
+      border: 3px solid var(--border); display: block;
+      pointer-events: none; -webkit-user-drag: none;
+    }
+    img { -webkit-user-drag: none; user-select: none; }
+    .hero-stats {
+      display: flex; gap: 2.5rem; margin-top: 3rem;
+      padding-top: 2rem; border-top: 1px solid var(--border); flex-wrap: wrap;
+    }
+    .stat-number {
+      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.8rem;
+      color: var(--text); letter-spacing: -0.03em; line-height: 1;
+    }
+    .stat-label { font-size: 0.8rem; color: var(--text2); margin-top: 0.25rem; }
+
+    /* SHARED SECTION */
+    .section-label {
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent2); margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      letter-spacing: -0.03em; color: var(--text); margin-bottom: 1rem; line-height: 1.15;
+    }
+    .section-sub {
+      font-size: 1rem; color: var(--text2); max-width: 580px;
+      font-weight: 300; line-height: 1.7; margin-bottom: 3rem;
+    }
+
+    /* ABOUT */
+    .about-section { background: var(--bg2); padding: 80px 2rem; }
+    .about-inner { max-width: 1100px; margin: 0 auto; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .about-text p { font-size: 1rem; color: var(--text2); line-height: 1.8; margin-bottom: 1.25rem; font-weight: 300; }
+    .about-text p strong { color: var(--text); font-weight: 500; }
+    .about-highlights { display: flex; flex-direction: column; gap: 1.25rem; }
+    .highlight-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 1rem; padding: 1.25rem 1.5rem; transition: transform 0.2s;
+    }
+    .highlight-card:hover { transform: translateY(-2px); }
+    .highlight-icon { width: 1.75rem; height: 1.75rem; object-fit: contain; pointer-events: none; margin-bottom: 0.6rem; display: block; }
+    .highlight-card h3 {
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 0.95rem; color: var(--text); margin-bottom: 0.35rem;
+    }
+    .highlight-card p { font-size: 0.85rem; color: var(--text2); line-height: 1.5; }
+
+    /* SKILLS */
+    .skills-section { padding: 80px 2rem; }
+    .skills-inner { max-width: 1100px; margin: 0 auto; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .skill-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 1.25rem; padding: 1.75rem; transition: transform 0.2s, border-color 0.2s;
+    }
+    .skill-card:hover { transform: translateY(-3px); border-color: var(--accent2); }
+    .skill-card.exploring {
+      border: 1.5px dashed var(--accent2);
+      background: linear-gradient(135deg, var(--card) 0%, rgba(232,99,42,0.03) 100%);
+    }
+    .skill-icon { font-size: 1.75rem; margin-bottom: 1rem; display: flex; align-items: center; }
+    .skill-icon img { width: 2rem; height: 2rem; object-fit: contain; pointer-events: none; }
+    .skill-card h3 {
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 1rem; color: var(--text); margin-bottom: 0.5rem;
+    }
+    .exploring-label {
+      font-size: 0.7rem; font-weight: 600; color: var(--accent2);
+      text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;
+    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .tag {
+      background: var(--tag-bg); color: var(--tag-text);
+      font-size: 0.75rem; font-weight: 500; padding: 0.25rem 0.65rem; border-radius: 100px;
+    }
+
+    /* PROJECTS */
+    .projects-section { padding: 80px 2rem; }
+    .projects-inner { max-width: 1100px; margin: 0 auto; }
+    .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .project-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 1.25rem; padding: 2rem;
+      transition: transform 0.2s, border-color 0.2s;
+      display: flex; flex-direction: column;
+    }
+    .project-card:hover { transform: translateY(-3px); border-color: var(--accent2); }
+    .project-meta {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 1rem; gap: 0.5rem;
+    }
+    .project-app-icon {
+      width: 52px; height: 52px; border-radius: 12px;
+      object-fit: cover; flex-shrink: 0;
+      pointer-events: none; -webkit-user-drag: none;
+      border: 1px solid var(--border);
+    }
+    .project-scale {
+      font-size: 0.75rem; color: var(--text2); background: var(--tag-bg);
+      padding: 0.2rem 0.6rem; border-radius: 100px; white-space: nowrap; flex-shrink: 0;
+    }
+    .project-card h3 {
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 1.1rem; color: var(--text); margin-bottom: 0.75rem;
+    }
+    .project-card p {
+      font-size: 0.9rem; color: var(--text2); line-height: 1.6; flex: 1; margin-bottom: 1.25rem;
+    }
+    .project-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .project-link {
+      font-size: 0.8rem; font-weight: 500; color: var(--accent2);
+      text-decoration: none; border: 1px solid var(--accent2);
+      padding: 0.3rem 0.85rem; border-radius: 100px; transition: background 0.2s, color 0.2s;
+    }
+    .project-link:hover { background: var(--accent2); color: #fff; }
+
+    /* OPEN SOURCE */
+    .opensource-section { background: var(--bg2); padding: 80px 2rem; }
+    .opensource-inner { max-width: 1100px; margin: 0 auto; }
+    .opensource-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .oss-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 1.25rem; padding: 1.75rem;
+      transition: transform 0.2s, border-color 0.2s;
+      display: flex; flex-direction: column;
+    }
+    .oss-card:hover { transform: translateY(-3px); border-color: var(--accent2); }
+    .oss-meta {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 1rem; gap: 0.5rem;
+    }
+    .oss-icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: var(--tag-bg); display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .oss-icon svg { width: 20px; height: 20px; fill: var(--text); }
+    .oss-license {
+      font-size: 0.7rem; color: var(--text2); background: var(--tag-bg);
+      padding: 0.2rem 0.6rem; border-radius: 100px; white-space: nowrap; flex-shrink: 0;
+      font-weight: 500;
+    }
+    .oss-card h3 {
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 1.05rem; color: var(--text); margin-bottom: 0.6rem;
+    }
+    .oss-card p {
+      font-size: 0.85rem; color: var(--text2); line-height: 1.6; flex: 1; margin-bottom: 1rem;
+    }
+    .oss-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem; }
+    .oss-link {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.8rem; font-weight: 500; color: var(--accent2);
+      text-decoration: none; border: 1px solid var(--accent2);
+      padding: 0.3rem 0.85rem; border-radius: 100px;
+      transition: background 0.2s, color 0.2s; align-self: flex-start;
+    }
+    .oss-link:hover { background: var(--accent2); color: #fff; }
+    .oss-view-all { text-align: center; margin-top: 2.5rem; }
+    .oss-view-all a {
+      font-size: 0.9rem; font-weight: 500; color: var(--accent2);
+      text-decoration: underline; text-underline-offset: 3px;
+      transition: opacity 0.2s;
+    }
+    .oss-view-all a:hover { opacity: 0.75; }
+
+    @media (prefers-color-scheme: dark) {
+      .oss-card {
+        background: #1e1e1e;
+        border: 1px solid rgba(255,255,255,0.12);
+      }
+      .oss-card:hover { border-color: var(--accent2); }
+      .oss-icon { background: #2a2a2a; }
+      .oss-license {
+        background: #2a2a2a; color: var(--text2);
+        border: 1px solid rgba(255,255,255,0.12);
+      }
+      .oss-tags .tag {
+        background: #2a2a2a; color: var(--tag-text);
+        border: 1px solid rgba(255,255,255,0.12);
+      }
+      .oss-link { color: var(--accent2); border: 1px solid var(--accent2); }
+      .oss-link:hover { background: var(--accent2); color: #fff; }
+    }
+
+    /* EXPERIENCE */
+    .experience-section { background: var(--bg2); padding: 80px 2rem; }
+    .experience-inner { max-width: 1100px; margin: 0 auto; }
+    .experience-list { display: flex; flex-direction: column; }
+    .exp-item {
+      display: grid; grid-template-columns: 160px 1fr;
+      gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--border);
+    }
+    .exp-item:last-child { border-bottom: none; }
+    .exp-period { font-size: 0.8rem; color: var(--text2); padding-top: 0.2rem; }
+    .exp-content h3 {
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 1rem; color: var(--text); margin-bottom: 0.2rem;
+    }
+    .exp-company { font-size: 0.85rem; color: var(--accent2); font-weight: 500; margin-bottom: 0.75rem; }
+    .exp-content p { font-size: 0.875rem; color: var(--text2); line-height: 1.7; }
+
+    /* CONTACT */
+    .contact-section { padding: 80px 2rem; }
+    .contact-inner { max-width: 1100px; margin: 0 auto; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-group label {
+      font-size: 0.8rem; font-weight: 500; color: var(--text2);
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .form-group input, .form-group textarea {
+      background: var(--card); border: 1.5px solid var(--border);
+      border-radius: 0.75rem; padding: 0.75rem 1rem;
+      font-family: 'DM Sans', sans-serif; font-size: 0.95rem;
+      color: var(--text); outline: none; transition: border-color 0.2s;
+      resize: none; width: 100%;
+    }
+    .form-group input:focus, .form-group textarea:focus { border-color: var(--accent2); }
+    .form-group input.error, .form-group textarea.error { border-color: #ef4444; }
+    .form-submit {
+      background: var(--accent2); color: #fff; border: none;
+      padding: 0.8rem 2rem; border-radius: 100px;
+      font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 500;
+      cursor: pointer; transition: opacity 0.2s, transform 0.2s; align-self: flex-start;
+    }
+    .form-submit:hover { opacity: 0.85; transform: translateY(-1px); }
+    .form-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+    .form-feedback {
+      display: none; padding: 0.75rem 1rem; border-radius: 0.75rem;
+      font-size: 0.9rem; font-weight: 500;
+    }
+    .form-feedback.success { display: block; background: rgba(34,197,94,0.1); color: #16a34a; border: 1px solid rgba(34,197,94,0.2); }
+    .form-feedback.error { display: block; background: rgba(239,68,68,0.1); color: #dc2626; border: 1px solid rgba(239,68,68,0.2); }
+    .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+    .contact-info-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--text); margin-bottom: 0.5rem; }
+    .contact-info p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; font-weight: 300; }
+    .contact-links { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem; }
+    .contact-link {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      background: var(--card); color: var(--text); border: 1px solid var(--border);
+      padding: 0.75rem 1.25rem; border-radius: 0.75rem;
+      font-size: 0.9rem; font-weight: 500; text-decoration: none;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .contact-link:hover { border-color: var(--accent2); color: var(--accent2); transform: translateX(4px); }
+    .contact-link-icon { width: 20px; height: 20px; object-fit: contain; flex-shrink: 0; pointer-events: none; }
+    svg.contact-link-icon { fill: var(--text); }
+
+    footer {
+      text-align: center; padding: 2rem 2rem 1.5rem; font-size: 0.8rem;
+      color: var(--text2); border-top: 1px solid var(--border);
+    }
+    .footer-share { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .share-btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      background: var(--card); color: var(--text2); border: 1px solid var(--border);
+      padding: 0.4rem 0.9rem; border-radius: 100px;
+      font-size: 0.78rem; font-weight: 500; text-decoration: none; cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+    .share-btn:hover { border-color: var(--accent2); color: var(--accent2); transform: translateY(-1px); }
+    .share-btn img { width: 15px; height: 15px; object-fit: contain; pointer-events: none; }
+    .share-copied { color: #16a34a !important; border-color: #16a34a !important; }
+
+    /* SCROLL ANIMATIONS */
+    .fade-up { opacity: 0; transform: translateY(32px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .fade-up-delay-1 { transition-delay: 0.1s; }
+    .fade-up-delay-2 { transition-delay: 0.2s; }
+    .fade-up-delay-3 { transition-delay: 0.3s; }
+    .fade-up-delay-4 { transition-delay: 0.4s; }
+
+    @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+    .hero-badge{animation:fadeUp .5s ease both}
+    .hero h1{animation:fadeUp .5s .1s ease both}
+    .hero-sub{animation:fadeUp .5s .2s ease both}
+    .hero-actions{animation:fadeUp .5s .3s ease both}
+    .hero-stats{animation:fadeUp .5s .4s ease both}
+    .hero-photo-wrap{}
+
+    /* SCROLL PROGRESS */
+    #scrollProgress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: #e74c3c; z-index: 200; pointer-events: none;
+    }
+
+    /* ACTIVE NAV */
+    .nav-links a.active { color: var(--accent2); }
+
+    /* BACK TO TOP */
+    #backToTop {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 150;
+      display: none; align-items: center;
+      background: var(--card); border: 1px solid var(--border);
+      padding: 0.45rem 0.75rem; border-radius: 100px;
+      cursor: pointer; transition: border-color 0.2s, transform 0.2s;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    #backToTop.visible { display: inline-flex; }
+    #backToTop:hover { border-color: var(--accent2); transform: translateY(-2px); }
+    #backToTop:focus { outline: none; }
+    .btt-icon {
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      flex-shrink: 0;
+      filter: brightness(0);
+    }
+    #backToTop:hover .btt-icon {
+      filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(600%) hue-rotate(330deg) brightness(95%);
+    }
+    @media (prefers-color-scheme: dark) {
+      #backToTop .btt-icon { filter: brightness(0) invert(1); }
+      #backToTop:hover .btt-icon { filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(600%) hue-rotate(330deg) brightness(95%); }
+    }
+
+    /* FLOATING CONTACT BUTTON (mobile only) */
+    #floatingContact {
+      position: fixed; bottom: 2rem; left: 2rem; z-index: 150;
+      display: none; align-items: center;
+      background: var(--accent2); border: 1px solid var(--accent2);
+      padding: 0.45rem 0.75rem; border-radius: 100px;
+      text-decoration: none; box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    #floatingContact.visible { display: inline-flex; }
+    #floatingContact:hover { opacity: 0.85; transform: translateY(-2px); }
+    #floatingContact img { width: 1rem; height: 1rem; object-fit: contain; filter: brightness(0) invert(1); pointer-events: none; display: block; }
+    @media (min-width: 901px) { #floatingContact { display: none !important; } }
+
+    /* REDUCED MOTION */
+    @media (prefers-reduced-motion: reduce) {
+      .fade-up { opacity: 1; transform: none; transition: none; }
+      .fade-up-delay-1, .fade-up-delay-2, .fade-up-delay-3, .fade-up-delay-4 { transition-delay: 0s; }
+      .hero-badge, .hero h1, .hero-sub, .hero-actions, .hero-stats, .hero-photo-wrap { animation: none; }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .nav-links { display: none !important; }
+      .hamburger { display: flex; }
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .opensource-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .hero { padding: 100px 1.5rem 60px; }
+      .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 2.5rem; }
+      .hero-photo { width: 160px; height: 200px; }
+      .hero-photo-wrap { order: -1; margin: 0 auto; }
+      .hero-badge { margin: 0 auto 1.5rem; }
+      .hero-actions { justify-content: center; }
+      .hero-stats { justify-content: center; gap: 1.5rem; }
+      .about-section,.skills-section,.projects-section,.experience-section,.contact-section,.opensource-section { padding: 60px 1.5rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .opensource-grid { grid-template-columns: 1fr; }
+      .exp-item { grid-template-columns: 1fr; gap: 0.4rem; }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2rem; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .opensource-grid { grid-template-columns: 1fr; }
+      nav { padding: 0 1.25rem; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ayush Kumar Sethi",
+    "alternateName": "AKS",
+    "jobTitle": "Mobile Technical Architect",
+    "url": "https://aks5686.github.io",
+    "sameAs": [
+      "https://linkedin.com/in/aks5686",
+      "https://github.com/aks5686"
+    ],
+    "knowsAbout": ["iOS", "Android", "Flutter", "React Native", "Capacitor"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Available for opportunities"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="icon-github" viewBox="0 0 16 16">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+    </symbol>
+  </svg>
+
+  <div id="scrollProgress"></div>
+
+  <nav>
+    <a class="nav-logo" href="#"><span>AKS</span> — Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#opensource">Open Source</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="https://github.com/aks5686" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub profile"><svg aria-hidden="true"><use href="#icon-github"></use></svg></a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#projects" onclick="closeMenu()">Projects</a>
+    <a href="#opensource" onclick="closeMenu()">Open Source</a>
+    <a href="#skills" onclick="closeMenu()">Skills</a>
+    <a href="#experience" onclick="closeMenu()">Experience</a>
+    <a href="https://github.com/aks5686" target="_blank" rel="noopener" class="nav-github-mobile" onclick="closeMenu()"><svg aria-hidden="true"><use href="#icon-github"></use></svg> GitHub</a>
+    <a href="#contact" class="nav-cta" onclick="closeMenu()">Contact</a>
+  </div>
+
+  <main>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge">Available for global opportunities</div>
+        <h1>Architecting mobile<br/>experiences used by <em>millions.</em></h1>
+        <p class="hero-sub">Mobile Technical Architect with 15+ years building iOS, Android, React Native and Flutter apps — from concept to App Store, at scale.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Get in touch →</a>
+          <a href="#projects" class="btn-secondary">View work</a>
+          <a href="assets/files/CV-AKS.pdf" download class="btn-download">↓ Download CV</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="stat-number">15+</div><div class="stat-label">Years experience</div></div>
+          <div><div class="stat-number">120M+</div><div class="stat-label">Users reached</div></div>
+          <div><div class="stat-number">30+</div><div class="stat-label">Apps shipped</div></div>
+          <div><div class="stat-number">5</div><div class="stat-label">Platforms</div></div>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/photo-mobile.webp" type="image/webp" />
+          <source media="(max-width: 768px)" srcset="assets/images/photo-mobile.jpg" />
+          <source srcset="assets/images/photo.webp" type="image/webp" />
+          <img src="assets/images/photo.jpg" alt="Ayush Kumar Sethi, Mobile Technical Architect" class="hero-photo" draggable="false" loading="eager" fetchpriority="high" width="260" height="340" />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <div class="section-label fade-up">About</div>
+      <div class="about-grid">
+        <div>
+          <h2 class="section-title fade-up fade-up-delay-1">15 years of mobile.<br/>Built to last.</h2>
+          <div class="about-text fade-up fade-up-delay-2">
+            <p>I'm <strong>Ayush Kumar Sethi</strong> — a Mobile Technical Architect open to global opportunities, with a strong preference for remote-first and relocation-friendly roles worldwide.</p>
+            <p>My career spans the full mobile stack — from native iOS and Android to cross-platform React Native, Flutter and Capacitor. I've architected products used by <strong>120 million people</strong>, led engineering teams, driven pre-sales engagements, and delivered across fintech, health tech, enterprise and consumer domains.</p>
+            <p>I actively leverage AI tools — Claude Code, ChatGPT, Codex, Cursor — as genuine productivity multipliers throughout the development lifecycle.</p>
+          </div>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card fade-up fade-up-delay-1">
+            <img src="assets/images/themeicons/vpn.svg" alt="" class="highlight-icon" loading="lazy" draggable="false" />
+            <h3>High-security VPN at global scale</h3>
+            <p>Lead architect on Outline — open-source VPN deployed across iOS, Android and macOS for millions of users worldwide.</p>
+          </div>
+          <div class="highlight-card fade-up fade-up-delay-2">
+            <img src="assets/images/themeicons/users.svg" alt="" class="highlight-icon" loading="lazy" draggable="false" />
+            <h3>120M+ user e-greetings platform</h3>
+            <p>Owned iOS architecture and delivery of 123Greetings — one of the world's largest e-greetings apps.</p>
+          </div>
+          <div class="highlight-card fade-up fade-up-delay-3">
+            <img src="assets/images/themeicons/car-connect.svg" alt="" class="highlight-icon" loading="lazy" draggable="false" />
+            <h3>Connected car for Mahindra XUV400</h3>
+            <p>Architected BlueSensePlus — exclusive EV companion app with Apple Watch integration.</p>
+          </div>
+          <div class="highlight-card fade-up fade-up-delay-4">
+            <img src="assets/images/themeicons/aboutai.svg" alt="" class="highlight-icon" loading="lazy" draggable="false" />
+            <h3>AI-native development</h3>
+            <p>Integrated AI-assisted workflows across teams, improving code review efficiency and accelerating delivery cycles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section" id="projects">
+    <div class="projects-inner">
+      <div class="section-label fade-up">Projects</div>
+      <h2 class="section-title fade-up fade-up-delay-1">Shipped. At scale.</h2>
+      <p class="section-sub fade-up fade-up-delay-2">Selected work across platforms, industries and continents.</p>
+      <div class="projects-grid">
+        <div class="project-card fade-up">
+          <div class="project-meta">
+            <img src="assets/images/projectIcons/outline.webp" alt="Outline VPN" class="project-app-icon" loading="lazy" draggable="false" />
+            <span class="project-scale">Millions of users</span>
+          </div>
+          <h3>Outline VPN</h3>
+          <p>High-security open-source VPN built with Capacitor for unified cross-platform deployment across iOS, Android and macOS. Deployed globally by organisations requiring secure communications.</p>
+          <div class="project-links">
+            <a href="https://itunes.apple.com/us/app/outline-app/id1356177741" target="_blank" class="project-link">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=org.outline.android.client" target="_blank" class="project-link">Android</a>
+          </div>
+        </div>
+        <div class="project-card fade-up fade-up-delay-1">
+          <div class="project-meta">
+            <img src="assets/images/projectIcons/netskill.webp" alt="NetSkill" class="project-app-icon" loading="lazy" draggable="false" />
+            <span class="project-scale">EdTech</span>
+          </div>
+          <h3>NetSkill</h3>
+          <p>Enterprise learning and development platform offering gamified, microlearning-based training. Built cross-platform mobile apps delivering personalised learning journeys at scale.</p>
+          <div class="project-links">
+            <a href="https://www.netskill.com/" target="_blank" class="project-link">Website</a>
+            <a href="https://apps.apple.com/au/app/netskill-learner-app/id6503343647" target="_blank" class="project-link">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.netskill.app" target="_blank" class="project-link">Play Store</a>
+          </div>
+        </div>
+        <div class="project-card fade-up fade-up-delay-2">
+          <div class="project-meta">
+            <img src="assets/images/projectIcons/sanmarg.webp" alt="Sanmarg" class="project-app-icon" loading="lazy" draggable="false" />
+            <span class="project-scale">News & Media</span>
+          </div>
+          <h3>Sanmarg Daily</h3>
+          <p>Digital transformation of one of India's leading newspapers. Architected mobile platform for daily news delivery, e-paper, push notifications and offline reading across iOS and Android.</p>
+          <div class="project-links">
+            <a href="https://sanmarg.in/" target="_blank" class="project-link">Website</a>
+            <a href="https://apps.apple.com/in/app/sanmarg-hindi-daily/id6478143397" target="_blank" class="project-link">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sanmarg.android.v1" target="_blank" class="project-link">Play Store</a>
+          </div>
+        </div>
+        <div class="project-card fade-up fade-up-delay-3">
+          <div class="project-meta">
+            <img src="assets/images/projectIcons/123g.webp" alt="123Greetings" class="project-app-icon" loading="lazy" draggable="false" />
+            <span class="project-scale">120M+ lifetime users</span>
+          </div>
+          <h3>123Greetings</h3>
+          <p>iOS lead on one of the world's largest e-greetings platforms. Owned architecture, feature delivery and App Store management. Integrated native advertising driving 30% uplift in ad revenue.</p>
+          <div class="project-links">
+            <a href="https://apps.apple.com/in/app/greeting-cards-wishes/id718873921" target="_blank" class="project-link">App Store</a>
+          </div>
+        </div>
+        <div class="project-card fade-up">
+          <div class="project-meta">
+            <img src="assets/images/projectIcons/bluesense.webp" alt="BlueSensePlus" class="project-app-icon" loading="lazy" draggable="false" />
+            <span class="project-scale">Mahindra XUV400</span>
+          </div>
+          <h3>BlueSensePlus</h3>
+          <p>Exclusive connected car application for the Mahindra XUV400 electric vehicle, featuring Apple Watch app integration for seamless vehicle control and monitoring.</p>
+          <div class="project-links">
+            <a href="https://apps.apple.com/in/app/bluesenseplus-app-xuv400/id6443952494" target="_blank" class="project-link">App Store</a>
+          </div>
+        </div>
+        <div class="project-card fade-up fade-up-delay-1">
+          <div class="project-meta">
+            <img src="assets/images/projectIcons/camrematics.webp" alt="CameraMatics" class="project-app-icon" loading="lazy" draggable="false" />
+            <span class="project-scale">Logistics</span>
+          </div>
+          <h3>CameraMatics Fleet Management</h3>
+          <p>Intelligent fleet risk management solution providing real-time visibility and control over business vehicles and drivers. Deployed across 500+ commercial vehicles.</p>
+          <div class="project-links">
+            <a href="https://apps.apple.com/in/app/cameramatics-manager/id1456119183" target="_blank" class="project-link">Manager App</a>
+            <a href="https://apps.apple.com/in/app/cameramatics-driver/id1440009778" target="_blank" class="project-link">Driver App</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="opensource-section" id="opensource">
+    <div class="opensource-inner">
+      <div class="section-label fade-up">Open Source</div>
+      <h2 class="section-title fade-up fade-up-delay-1">Production-ready boilerplates. Free for everyone.</h2>
+      <p class="section-sub fade-up fade-up-delay-2">Open-source architecture templates built for real-world mobile development — clean, opinionated, and CI/CD-ready from day one.</p>
+      <div class="opensource-grid">
+        <div class="oss-card fade-up">
+          <div class="oss-meta">
+            <div class="oss-icon">
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+            </div>
+            <span class="oss-license">MIT License</span>
+          </div>
+          <h3>syzygy-base-ios</h3>
+          <p>Production-ready iOS boilerplate with Clean Architecture, MVVM, SwiftUI, Swift 6 concurrency and GitHub Actions CI/CD.</p>
+          <div class="oss-tags">
+            <span class="tag">Swift</span><span class="tag">SwiftUI</span><span class="tag">Clean Architecture</span>
+            <span class="tag">MVVM</span><span class="tag">GitHub Actions CI/CD</span>
+          </div>
+          <a href="https://github.com/Syzygy-Hub/syzygy-base-ios" target="_blank" rel="noopener" class="oss-link">View on GitHub →</a>
+        </div>
+        <div class="oss-card fade-up fade-up-delay-1">
+          <div class="oss-meta">
+            <div class="oss-icon">
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+            </div>
+            <span class="oss-license">MIT License</span>
+          </div>
+          <h3>syzygy-base-android</h3>
+          <p>Production-ready Android boilerplate with Clean Architecture, MVVM, Jetpack Compose, Kotlin Coroutines and GitHub Actions CI/CD.</p>
+          <div class="oss-tags">
+            <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">Clean Architecture</span>
+            <span class="tag">MVVM</span><span class="tag">GitHub Actions CI/CD</span>
+          </div>
+          <a href="https://github.com/Syzygy-Hub/syzygy-base-android" target="_blank" rel="noopener" class="oss-link">View on GitHub →</a>
+        </div>
+        <div class="oss-card fade-up fade-up-delay-2">
+          <div class="oss-meta">
+            <div class="oss-icon">
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+            </div>
+            <span class="oss-license">MIT License</span>
+          </div>
+          <h3>syzygy-base-rn</h3>
+          <p>Production-ready React Native boilerplate with Clean Architecture, MVVM, TypeScript, async/await and GitHub Actions CI/CD.</p>
+          <div class="oss-tags">
+            <span class="tag">React Native</span><span class="tag">TypeScript</span><span class="tag">Clean Architecture</span>
+            <span class="tag">MVVM</span><span class="tag">GitHub Actions CI/CD</span>
+          </div>
+          <a href="https://github.com/Syzygy-Hub/syzygy-base-rn" target="_blank" rel="noopener" class="oss-link">View on GitHub →</a>
+        </div>
+        <div class="oss-card fade-up fade-up-delay-3">
+          <div class="oss-meta">
+            <div class="oss-icon">
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+            </div>
+            <span class="oss-license">MIT License</span>
+          </div>
+          <h3>syzygy-base-flutter</h3>
+          <p>Production-ready Flutter boilerplate with Clean Architecture, BLoC, Dart, GoRouter and GitHub Actions CI/CD.</p>
+          <div class="oss-tags">
+            <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">BLoC/Cubit</span>
+            <span class="tag">GoRouter</span><span class="tag">GitHub Actions CI/CD</span>
+          </div>
+          <a href="https://github.com/Syzygy-Hub/syzygy-base-flutter" target="_blank" rel="noopener" class="oss-link">View on GitHub →</a>
+        </div>
+      </div>
+      <div class="oss-view-all fade-up">
+        <a href="https://github.com/Syzygy-Hub" target="_blank" rel="noopener">View all repos on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-section" id="skills">
+    <div class="skills-inner">
+      <div class="section-label fade-up">Skills</div>
+      <h2 class="section-title fade-up fade-up-delay-1">Full-stack mobile expertise.</h2>
+      <p class="section-sub fade-up fade-up-delay-2">Deep across native and cross-platform, with architectural thinking at every layer.</p>
+      <div class="skills-grid">
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><img src="assets/images/themeicons/ios.svg" alt="iOS Development" loading="lazy" draggable="false" /></div>
+          <h3>iOS Development</h3>
+          <div class="skill-tags">
+            <span class="tag">Swift</span><span class="tag">SwiftUI</span><span class="tag">UIKit</span>
+            <span class="tag">Objective-C</span><span class="tag">Xcode</span><span class="tag">TestFlight</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-1">
+          <div class="skill-icon"><img src="assets/images/themeicons/android.svg" alt="Android Development" loading="lazy" draggable="false" /></div>
+          <h3>Android Development</h3>
+          <div class="skill-tags">
+            <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span>
+            <span class="tag">Android SDK</span><span class="tag">Java</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-2">
+          <div class="skill-icon"><img src="assets/images/themeicons/cross-platform.svg" alt="Cross-Platform Development — React Native, Flutter" loading="lazy" draggable="false" /></div>
+          <h3>Cross-Platform</h3>
+          <div class="skill-tags">
+            <span class="tag">React Native</span><span class="tag">Flutter</span>
+            <span class="tag">Capacitor</span><span class="tag">Dart</span><span class="tag">TypeScript</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-3">
+          <div class="skill-icon"><img src="assets/images/themeicons/architecture.svg" alt="Mobile Architecture and Design Patterns" loading="lazy" draggable="false" /></div>
+          <h3>Architecture & Design</h3>
+          <div class="skill-tags">
+            <span class="tag">MVVM</span><span class="tag">VIPER</span><span class="tag">Clean Architecture</span>
+            <span class="tag">SOLID</span><span class="tag">Microservices</span><span class="tag">GraphQL</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><img src="assets/images/themeicons/ci-cd.svg" alt="DevOps and CI/CD — GitHub Actions, Fastlane" loading="lazy" draggable="false" /></div>
+          <h3>DevOps & CI/CD</h3>
+          <div class="skill-tags">
+            <span class="tag">GitHub Actions</span><span class="tag">Fastlane</span>
+            <span class="tag">Xcode Cloud</span><span class="tag">Firebase</span><span class="tag">GitLab CI</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-1">
+          <div class="skill-icon"><img src="assets/images/themeicons/ai.svg" alt="AI-Assisted Development — Claude Code, Cursor, Copilot" loading="lazy" draggable="false" /></div>
+          <h3>AI-Assisted Development</h3>
+          <div class="skill-tags">
+            <span class="tag">Claude Code</span><span class="tag">ChatGPT</span>
+            <span class="tag">Codex</span><span class="tag">Cursor</span><span class="tag">GitHub Copilot</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-2">
+          <div class="skill-icon"><img src="assets/images/themeicons/leader.svg" alt="Engineering Leadership and Team Delivery" loading="lazy" draggable="false" /></div>
+          <h3>Leadership & Delivery</h3>
+          <div class="skill-tags">
+            <span class="tag">Team Mentoring</span><span class="tag">Pre-Sales</span>
+            <span class="tag">Sprint Governance</span><span class="tag">Tech Roadmapping</span>
+            <span class="tag">Cross-functional</span><span class="tag">Agile</span>
+          </div>
+        </div>
+        <div class="skill-card exploring fade-up fade-up-delay-3">
+          <div class="skill-icon"><img src="assets/images/themeicons/explore.svg" alt="Currently Exploring — LLM Integration, RAG, Agentic AI" loading="lazy" draggable="false" /></div>
+          <h3>Currently Exploring</h3>
+          <div class="exploring-label">Active learning</div>
+          <div class="skill-tags">
+            <span class="tag">LLM Integration</span><span class="tag">RAG Systems</span>
+            <span class="tag">Agentic Workflows</span><span class="tag">Vector Databases</span>
+            <span class="tag">AI Product Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section" id="experience">
+    <div class="experience-inner">
+      <div class="section-label fade-up">Experience</div>
+      <h2 class="section-title fade-up fade-up-delay-1">Where I've built.</h2>
+      <p class="section-sub fade-up fade-up-delay-2">15 years across product companies, service firms and global clients.</p>
+      <div class="experience-list">
+        <div class="exp-item fade-up">
+          <div class="exp-period">Mar 2025 – Apr 2026</div>
+          <div class="exp-content">
+            <h3>Lead Mobile Developer</h3>
+            <div class="exp-company">Teon LLC</div>
+            <p>Architected and delivered Outline — a global high-security VPN across iOS, Android and macOS. Reduced build times by 20%, accelerated release cycles from monthly to 3-weekly. Leveraged Claude Code and ChatGPT throughout the lifecycle.</p>
+          </div>
+        </div>
+        <div class="exp-item fade-up">
+          <div class="exp-period">Oct 2021 – Aug 2024</div>
+          <div class="exp-content">
+            <h3>Technical Lead</h3>
+            <div class="exp-company">GoodWorkLabs Services Pvt. Ltd.</div>
+            <p>Led architecture and delivery of 8+ simultaneous client mobile projects across iOS, Android and Flutter. Drove 5+ pre-sales engagements. Introduced AI-assisted development, improving code review efficiency by 25%.</p>
+          </div>
+        </div>
+        <div class="exp-item fade-up">
+          <div class="exp-period">Oct 2017 – Sep 2021</div>
+          <div class="exp-content">
+            <h3>Senior Software Engineer</h3>
+            <div class="exp-company">IndusNet Technologies Pvt. Ltd.</div>
+            <p>Designed and delivered 20+ mobile applications across fintech, health tech and enterprise domains. Coached 10+ developers, establishing Git workflows that reduced PR review time by 40%.</p>
+          </div>
+        </div>
+        <div class="exp-item fade-up">
+          <div class="exp-period">Jan 2017 – Sep 2017</div>
+          <div class="exp-content">
+            <h3>Senior iOS Developer</h3>
+            <div class="exp-company">MET Technologies Pvt. Ltd.</div>
+            <p>Developed mobile applications owning the full lifecycle from requirements through to App Store deployment. Maintained clean codebases using Git best practices, ensuring code quality and maintainability.</p>
+          </div>
+        </div>
+        <div class="exp-item fade-up">
+          <div class="exp-period">Jan 2015 – May 2016</div>
+          <div class="exp-content">
+            <h3>Specialist — Technology</h3>
+            <div class="exp-company">Intrasoft Technologies Ltd.</div>
+            <p>Led the development of 123Greetings — 120M+ lifetime users. Integrated native advertising driving a 30% uplift in app ad revenue within 3 months.</p>
+          </div>
+        </div>
+        <div class="exp-item fade-up">
+          <div class="exp-period">Mar 2013 – Dec 2014</div>
+          <div class="exp-content">
+            <h3>iOS Developer</h3>
+            <div class="exp-company">Brishti Technologies Pvt. Ltd.</div>
+            <p>Developed native iOS applications using Xcode and Objective-C across multiple client domains.</p>
+          </div>
+        </div>
+        <div class="exp-item fade-up">
+          <div class="exp-period">Nov 2010 – Feb 2013</div>
+          <div class="exp-content">
+            <h3>Flash AS3 Programmer</h3>
+            <div class="exp-company">Radikal Labs Pvt. Ltd.</div>
+            <p>Created Flash apps using ActionScript 3.0, building foundational skills in cross-platform interactive development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="section-label fade-up">Contact</div>
+      <h2 class="section-title fade-up fade-up-delay-1">Let's build something great.</h2>
+      <div class="contact-grid">
+        <div class="contact-info fade-up fade-up-delay-2">
+          <div>
+            <div class="contact-info-title">Open to global opportunities</div>
+            <p>Available for senior mobile engineering and technical leadership roles worldwide. Remote-first, open to relocation.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:aks5686@gmail.com" class="contact-link"><img src="assets/images/themeicons/email.svg" alt="" class="contact-link-icon" draggable="false" /> aks5686@gmail.com</a>
+            <a href="https://www.linkedin.com/in/aks5686/" target="_blank" rel="me noopener" class="contact-link"><img src="assets/images/themeicons/linkedin.svg" alt="" class="contact-link-icon" draggable="false" /> LinkedIn</a>
+            <a href="https://github.com/aks5686" target="_blank" rel="me noopener" class="contact-link"><svg class="contact-link-icon" aria-hidden="true"><use href="#icon-github"></use></svg> GitHub</a>
+            <a href="tel:+918017776984" class="contact-link"><img src="assets/images/themeicons/phone.svg" alt="" class="contact-link-icon" draggable="false" /> +91 80177 76984</a>
+          </div>
+        </div>
+        <div class="fade-up fade-up-delay-3">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..."></textarea>
+            </div>
+            <div class="form-feedback" id="formFeedback"></div>
+            <button type="submit" class="form-submit" id="submitBtn">Send message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-share">
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://aks5686.github.io" target="_blank" rel="noopener" class="share-btn">
+        <img src="assets/images/themeicons/linkedin.svg" alt="" draggable="false" /> Share on LinkedIn
+      </a>
+      <a href="https://wa.me/?text=Check%20out%20Ayush%27s%20portfolio%3A%20https%3A%2F%2Faks5686.github.io" target="_blank" rel="noopener" class="share-btn">
+        <img src="assets/images/themeicons/whatsapp.svg" alt="" draggable="false" /> Share on WhatsApp
+      </a>
+      <button class="share-btn" id="copyLinkBtn" onclick="copyLink()">
+        <img src="assets/images/themeicons/copy-link.svg" alt="" draggable="false" /> Copy Link
+      </button>
+    </div>
+    <p>© 2026 Ayush Kumar Sethi · Built with Care</p>
+  </footer>
+
+  <a href="#contact" id="floatingContact" aria-label="Contact">
+    <img src="assets/images/themeicons/contact-card.svg" alt="" draggable="false" />
+  </a>
+
+  <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'}); this.blur();" aria-label="Back to top"><img src="assets/images/themeicons/to-top.svg" class="btt-icon" alt="" draggable="false" /></button>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+  <script>
+    // HAMBURGER
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    function closeMenu() {
+      document.getElementById('hamburger').classList.remove('open');
+      document.getElementById('mobileMenu').classList.remove('open');
+    }
+
+    // COPY LINK
+    function copyLink() {
+      navigator.clipboard.writeText('https://aks5686.github.io').then(() => {
+        const btn = document.getElementById('copyLinkBtn');
+        btn.classList.add('share-copied');
+        btn.querySelector('img').src = 'assets/images/themeicons/copy-link.svg';
+        const originalHTML = btn.innerHTML;
+        btn.innerHTML = btn.innerHTML.replace('Copy Link', 'Copied!');
+        setTimeout(() => { btn.classList.remove('share-copied'); btn.innerHTML = originalHTML; }, 2500);
+      });
+    }
+
+    // FAVICON — switch on dark/light theme
+    function updateFavicon() {
+      const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.getElementById('favicon-32').href = `assets/images/icon-set/${theme}/A-32.png`;
+      document.getElementById('favicon-16').href = `assets/images/icon-set/${theme}/A-16.png`;
+    }
+    updateFavicon();
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
+
+    // IMAGE PROTECTION — block right-click and drag on all images
+    document.addEventListener('contextmenu', e => { if(e.target.tagName==='IMG') e.preventDefault(); });
+    document.addEventListener('dragstart', e => { if(e.target.tagName==='IMG') e.preventDefault(); });
+
+    // FIREBASE INIT
+    const firebaseConfig = {
+      apiKey: "AIzaSyAEo3lO4-7DFRot1-UyAYZ6ox8SWHf1ZOU",
+      authDomain: "aks---portfolio.firebaseapp.com",
+      projectId: "aks---portfolio",
+      storageBucket: "aks---portfolio.firebasestorage.app",
+      messagingSenderId: "923068660133",
+      appId: "1:923068660133:web:206c9a04ec2cd847a3504c",
+      measurementId: "G-RE6WRLKR2F"
+    };
+    if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+    // CONTACT FORM — Firebase Firestore
+    let feedbackTimer;
+    function showFeedback(el, type, msg) {
+      clearTimeout(feedbackTimer);
+      el.className = 'form-feedback ' + type;
+      el.textContent = msg;
+      feedbackTimer = setTimeout(() => { el.className = 'form-feedback'; el.textContent = ''; document.querySelectorAll('.form-group input.error, .form-group textarea.error').forEach(f => f.classList.remove('error')); }, 5000);
+    }
+
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const message = document.getElementById('message');
+      const feedback = document.getElementById('formFeedback');
+      const btn = document.getElementById('submitBtn');
+
+      [name, email, message].forEach(f => f.classList.remove('error'));
+      feedback.className = 'form-feedback';
+
+      let valid = true;
+      if (!name.value.trim()) { name.classList.add('error'); valid = false; }
+      if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) { email.classList.add('error'); valid = false; }
+      if (!message.value.trim()) { message.classList.add('error'); valid = false; }
+
+      if (!valid) {
+        showFeedback(feedback, 'error', 'Please fill in all fields correctly.');
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      try {
+        await db.collection('contacts').add({
+          name: name.value.trim(),
+          email: email.value.trim(),
+          message: message.value.trim(),
+          timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        });
+        showFeedback(feedback, 'success', '✓ Message sent! I\'ll get back to you soon.');
+        contactForm.reset();
+      } catch (err) {
+        showFeedback(feedback, 'error', 'Something went wrong. Please email me directly at aks5686@gmail.com');
+      } finally {
+        btn.textContent = 'Send message →';
+        btn.disabled = false;
+      }
+    });
+
+    // SCROLL ANIMATIONS — animate in on scroll down, reverse on scroll back up
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        } else {
+          e.target.classList.remove('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // SCROLL PROGRESS BAR
+    const progressEl = document.getElementById('scrollProgress');
+    window.addEventListener('scroll', () => {
+      const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      progressEl.style.width = Math.min(pct, 100) + '%';
+    }, { passive: true });
+
+    // BACK TO TOP — show after hero leaves viewport
+    new IntersectionObserver(([e]) => {
+      document.getElementById('backToTop').classList.toggle('visible', !e.isIntersecting);
+    }, { threshold: 0 }).observe(document.querySelector('.hero'));
+
+    // FLOATING CONTACT BUTTON — mobile only, visible between hero and contact section
+    (function () {
+      let heroGone = false, contactVisible = false;
+      function syncContact() {
+        document.getElementById('floatingContact').classList.toggle('visible', heroGone && !contactVisible);
+      }
+      new IntersectionObserver(([e]) => { heroGone = !e.isIntersecting; syncContact(); }, { threshold: 0 })
+        .observe(document.querySelector('.hero'));
+      new IntersectionObserver(([e]) => { contactVisible = e.isIntersecting; syncContact(); }, { threshold: 0 })
+        .observe(document.querySelector('.contact-section'));
+    })();
+
+    // LAZY LOADING — apply to all images except the hero photo
+    document.querySelectorAll('img:not(.hero-photo)').forEach(img => {
+      if (!img.hasAttribute('loading')) img.setAttribute('loading', 'lazy');
+    });
+
+    // ACTIVE NAV — highlight link for section in view
+    const navObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+          const link = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+          if (link) link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-60px 0px -55% 0px', threshold: 0 });
+    document.querySelectorAll('section[id]').forEach(s => navObserver.observe(s));
+  </script>
+
+</body>
+</html>
